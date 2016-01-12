@@ -542,8 +542,7 @@
             this.startDate = start;
             this.endDate = end;
 
-            if (!this.startDate.isSame(this.oldStartDate) || !this.endDate.isSame(this.oldEndDate))
-                this.notify();
+            this.notify();
 
             this.updateCalendars();
         },
@@ -673,8 +672,7 @@
             this.element.removeClass('active');
             this.container.hide();
 
-            if (!this.startDate.isSame(this.oldStartDate) || !this.endDate.isSame(this.oldEndDate))
-                this.notify();
+            this.notify();
 
             this.oldStartDate = this.startDate.clone();
             this.oldEndDate = this.endDate.clone();
